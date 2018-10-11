@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- PAGE TITLE -->
+    <title>KALRAV'17</title>
+    <!-- MAKE IT RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <!-- FAVICON -->	
+	<link rel="shortcut icon" href="kalrav.png" />
+    <!-- STYLESHEETS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link href="css/options.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:900,300,400,200,800' rel='stylesheet' type='text/css'>
+     <style type="text/css">
+      body{
+        margin: 0px;
+        padding: 0px;
+       
+    }
+/*
+         .name{
+             color: #fff;
+         }
+*/
+         header{
+             background-image: url(wallpapers-28.jpg); 
+         }
+         .result{
+             display: none;
+         }
+         .show{
+             animation: show 4000ms ease-in-out;
+         }
+         @ketframes show{
+             0%{
+                 display: none;
+                 height: 0%;
+             }
+             100%{
+                 display: block;
+                height: 100%;
+             }
+         }
+         .second{
+             display: none;
+         }
+         .team{
+             display: none;
+         }
+         .hide{
+             display: none;
+         }
+  </style>
+  </head>
+  <!-- START BODY -->
+  <body>
+
+  	<div id="page">
+	  	<!-- START HEADER -->
+	  	<header id="header" class="small with-separation-bottom">
+	  		<!-- POINTER ANIMATED -->
+	  		<canvas id="header-canvas"></canvas>
+	  		
+	  		<nav id="navigation-mobile"></nav>
+	  	
+	  		<!-- MAIN MENU -->
+	  		<nav id="navigation">
+	  			<!-- DISPLAY MOBILE MENU -->
+	  			<a href="#" id="show-mobile-menu"><i class="fa fa-bars"></i></a>
+	  			<!-- CLOSE MOBILE MENU -->
+		  		<a href="#" id="close-navigation-mobile"><i class="fa fa-long-arrow-left"></i></a>
+	  			
+		  		<ul id="left-navigation" class="animate-me fadeInLeftBig">
+			  		<li class="menu-item">
+			  			<a href="index.html">Home</a>
+			  			
+			  		</li>
+			  		<li class="menu-item"><a href="sac.html" >About Us</a></li>
+			  		<li class="menu-item"><a href="literary.html" >Events</a></li>
+                    
+                    
+		  		</ul>
+		  		
+<!--                <ul  class="animate-me flipInX" data-wow-duration="3s">-->
+		  			
+<!--                   </ul>-->
+                <div  class="animate-me flipInX" data-wow-duration="3s">
+		  			<a id="logo-navigation">
+		  				
+		  			</a>
+		  		</div>
+<!--		  		<ul id="right-navigation" class="animate-me fadeInRightBig">-->
+                <ul id="right-navigation" class="animate-me fadeInRightBig">
+                   
+			  		<li class="menu-item"><a href="gallery.html" >Gallery</a></li>
+                     <li class="menu-item current-menu-item menu-item-has-children"><a href="register.html">Register</a> </li>
+			  		<li class="menu-item"><a href="contact.html" >Contact Us</a></li>
+			  		
+		  		</ul>
+	  		</nav>
+	  		<!-- SHADOW -->
+	  		<div id="shade2"></div>
+		
+	  	</header>
+	  	<!-- END HEADER -->
+        <div class="main-container">
+	  		<div class="container" id="contact-container">
+	  			<!--PORTFOLIO -->
+	  			<h2 class="with-breaker animate-me fadeInUp name">
+		  			Register Here!! 
+	  			</h2>
+	  			<div class="row">
+	  				
+                    
+                    
+                    <div class="col-md-10">
+	  					
+	  					
+                       <form id="contact-form" method="post" action="#" class="form-horizontal">
+                           <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-event">Type of Event</label>
+								<div class="controls col-md-8">
+                                    
+                                    
+                                    <select name="typeofevent" id="type" placeholder="Select your event type" class="input-xlarge form-control" required="">
+														<option value="Not selected">Select your Event</option>
+                                                        <option value="solo">solo</option>
+														<option value="duet">duet</option>
+														<option value="team">team</option>
+                                    </select>
+                 </div>
+							</div>
+							
+                                    
+                                    <div class="result">
+                                        <div class="nam">
+							<!-- NAME -->
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-name">Name</label>
+								<div class="controls col-md-8">
+									<input id="contact-name" name="name" type="text" placeholder="Your name" class="input-xlarge form-control">
+								</div>
+							</div>
+                                        </div>
+                            <div class="team">
+                                 <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-name">TeamName</label>
+								<div class="controls col-md-8">
+									<input id="contact-teamname" name="groupname" type="text" placeholder="Your Team name" class="input-xlarge form-control" >
+								</div>
+							</div>       
+                            </div>
+<!--                            roll no                        -->
+                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-roll">Roll No.</label>
+								<div class="controls col-md-8">
+									<input id="contact-roll" name="rollnumber" type="text" pattern="[1][3456][0][3][3][0-8][0-9]{4}" placeholder="Enter the roll no." class="input-xlarge form-control numeric" required="">
+								</div>
+                                                                                        
+							</div>
+                        <div class="second">
+                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondname"> Second Participant Name</label>
+								<div class="controls col-md-8">
+									<input id="contact-secondname" name="name2" type="text" placeholder="second name" class="input-xlarge form-control" >
+								</div>
+							</div>
+                            
+<!--                          second  roll no                        -->
+                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondroll">Second Participant Roll No.</label>
+								<div class="controls col-md-8">
+									<input id="contact-secondroll" name="rollnumber2" type="text" pattern="[1][3456][0][3][3][0-8][0-9]{4}" placeholder="Enter the second roll no." class="input-xlarge form-control numeric" >
+								</div>
+                                                                                        
+							</div>
+                        </div>
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-year">Year</label>
+								<div class="controls col-md-8">
+									<select id="contact-year" name="year" type="text" placeholder="Choose your year" class="input-xlarge form-control" required="">
+                                      		<option value="Not selected" disabled="" selected="">Select your year</option>
+                                            <option value="First">First year</option>
+								            <option value="Second">Second year</option>
+								            <option value="Third">Third year</option>
+								            <option value="Fourth">Fourth year</option>  
+                                    </select>
+								</div>
+							</div>
+                         	<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-branch">Branch</label>
+								<div class="controls col-md-8">
+									<select id="contact-branch" name="branch" type="text" placeholder="Choose your branch" class="input-xlarge form-control" required="">
+                                      		<option value="Not selected" disabled="" selected="">Select your Branch</option>
+                                            <option value="CSE">CSE</option>
+								            <option value="ECE">ECE</option>
+								            <option value="IT">IT</option>
+								            <option value="ME">ME</option>
+                                            <option value="CE">Civil</option>
+                                        <option value="EEE">EEE</option>
+                                         <option value="AEI">AEI</option>
+                                          <option value="B.Pharma">B.Pharma</option>
+                                        <option value="MCA">MCA</option>
+                                         <option value="MBA">MBA</option>
+                                    </select>
+								</div>
+							</div>
+                           
+                           
+                           <!-- Mobile Number -->
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-number">Mobile Number</label>
+								<div class="controls col-md-8">
+									<input id="contact-number" name="mobilenumber" type="tel" pattern="[789][0-9]{9}" placeholder="Enter your mobile number" class="input-xlarge form-control numeric" required="">
+								</div>
+							</div>
+<!--
+                           <div class="second">
+                              	<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondnumber">Second Mobile Number</label>
+								<div class="controls col-md-8">
+									<input id="contact-secondnumber" name="" type="tel" placeholder="Enter second mobile number" class="input-xlarge form-control" required="">
+								</div>
+							</div>            
+                            </div>
+-->
+                           
+                           <!-- college -->
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-phone">Council</label>
+								<div class="controls col-md-8">
+									<select id="contact-council" name="council" type="text" placeholder="Choose your Council" class="input-xlarge form-control council" required="" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                                      		<option value="" disabled="" selected="">Select your Council</option>
+                                            <option value="Literary">Literary Council</option>
+								            <option value="Hobby">Hobby Council</option>
+								            <option value="Cultural">Cultural Council</option>
+                                    </select>
+								</div>
+							</div>
+                            
+                            <!-- Event -->
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-event">Event</label>
+								<div class="controls col-md-8">
+                                    
+<!--
+                                    
+                                    <select name="" id="contact-event" placeholder="Select your event" class="input-xlarge form-control" required="">
+														<option value="Not selected">Select your Event</option>
+                                                        <option value=""></option>
+														<option value=""></option>
+														<option value=""></option>
+														<option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        
+													</select>
+                                   
+-->
+                                    
+                                    
+                                       <div class="sub_category_div" id="sub_category_div">
+            <script type="text/javascript" language="JavaScript">
+                document.write('<select name="event" id="subcategory" required="" class="input-xlarge form-control" ><option value="" disabled="" selected="">Please select event</option></select>')
+            </script>
+            <noscript>
+                <select name="event" id="subcategory" required="" class="input-xlarge form-control" >
+                    <option value="" disabld="" selected="">Please select the event</option>
+                </select>
+            </noscript>
+        </div>
+                                    
+                                    
+                                    
+								</div>
+							</div>
+                            <div class="nam">	
+                                                  <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-gender">Gender</label>
+								<div class="controls col-md-8">
+                                      <select name="gender" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control">
+														<option value="" disabled="" selected="">Select your gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>                                        
+													</select>
+								</div>
+                                                                                        
+							</div>
+                            </div>
+                                        <div class="second">
+                                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondgender">Second person Gender</label>
+								<div class="controls col-md-8">
+                                      <select name="gender2" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control">
+														<option value="Not selected">Select your gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>                                        
+													</select>
+								</div>
+                                                                                        
+							</div>
+                                        </div>
+							
+							<div class="control-group text-right">
+							 	<input type="hidden" name="submitted" id="submitted" value="true" />
+							 	<button type="submit" class="btn btn-default" name="submitted"><i class="fa fa-paper-plane-o"></i> Register</button>
+							</div>
+                           </div>
+						</form> 
+                        
+                  
+	  				</div>
+                    
+         	  			
+	  			</div>
+	  		</div>
+	  		</div>
+            <section class="contact-container with-separation-bottom with-separation-top">
+			<div class="contact-boxes">
+		  			<div class="contact-box contact-box-email animate-me zoomIn">
+		  				<h2 class="chintu">Email</h2>
+		  				<p>Write us a few lines about your ideas, your projects and let's advance together.</p>
+		  				<a href= https://docs.google.com/forms/d/10FQLLsk4l1piA9uDnbXxsmCIa4xXC_g8a9LdZL6CPC4/edit class="btn btn-default"><i class="fa fa-envelope"></i> Contact</a>
+		  			</div>
+		  			<div class="contact-box contact-box-twitter animate-me zoomIn">
+		  				<h2 class="chintu">Twitter</h2>
+		  				<p>Follow us to interact, chat and share our ideas on Twitter.</p>
+		  				<a href= https://twitter.com/kalrav2k17 class="btn btn-default"><i class="fa fa-twitter"></i> Follow us</a>
+		  			</div>
+		  			<div class="contact-box contact-box-facebook animate-me zoomIn">
+		  				<h2 class="chintu">Facebook</h2>
+		  				<p>Like our page and send us message directly from our brand new Facebook page.</p>
+		  				<a href="https://www.facebook.com/rkgitphotoholics/?hc_ref=SEARCH&fref=nf" class="btn btn-default"><i class="fa fa-facebook"></i> Like us</a>
+		  			</div>
+                    
+		  			<div class="contact-box contact-box-youtube animate-me zoomIn">
+		  				<h2 class="chintu">Youtube</h2>
+		  				<p>View our previous Events</p>
+		  				<a href= https://www.youtube.com/channel/UCTn8-IhWdkdqt2p7-uppgKA class="btn btn-default"><i class="fa fa-youtube"></i> Watch us.</a>
+		  			</div>
+                    
+		  		</div>	  		</section>
+	  	</div>
+	  	<!-- END MAIN CONTAINER -->
+    
+	  	<!-- START FOOTER -->
+	  		<footer id="footer" class="with-separation-top">
+		  	<aside id="widgets" class="container">
+		  		<div class="row">
+		  			<!-- WIDGET -->
+			  		<div class="col-md-4 widget animate-me fadeInLeft">
+			  			<p>KALRAV'17</p>
+			  			<a href="sac.html" class="btn btn-default"><i class="fa fa-users"></i> Read more</a>
+			  		</div>
+		  			<!-- WIDGET -->
+			  		<div class="col-md-4 widget animate-me fadeInUp">
+				  		
+				  			</div>
+		  			<!-- WIDGET -->
+			  		<div class="col-md-4 widget animate-me fadeInRight">
+			  			<h4>Contact</h4>
+			  			<ul class="contact-informations">
+				  			<li class="contact-address">Raj Kumar Goel Institute of Technology, 
+ Ghaziabad, UP - 201003</li>
+				  			
+			  			</ul>
+			  						  			<a href="contact.html" class="btn btn-default"><i class="fa fa-envelope-o"></i> Contact Now</a>
+			  		</div>
+		  		</div>
+		  	</aside>
+		  	<div id="copyright" class="animate-me fadeInUp">
+		  		<div class="container">
+			  		<p>&#169; 2017 All Rights Reserved.KALRAV-2017 &nbsp; &nbsp; 			  		
+		  		</div>
+		  	</div>
+	  	</footer>
+	  	<!-- END FOOTER -->
+   
+	  	<!-- SCROLL TOP -->
+	  	<a href="#" id="scroll-top" class="fadeInRight animate-me"><i class="fa fa-angle-double-up"></i></a>
+    </body>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+
+       var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        $(function () {
+            $(".numeric").bind("keypress", function (e) {
+                var keyCode = e.which ? e.which : e.keyCode
+                var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+                $(".error").css("display", ret ? "none" : "inline");
+                return ret;
+            });
+            $(".numeric").bind("paste", function (e) {
+                return false;
+            });
+            $(".numeric").bind("drop", function (e) {
+                return false;
+            });
+        });
+
+        $(document).ready(function(){
+          $('#type').change(function(){
+              
+//                               var select = document.getElementById("subcategory");
+//                                var length = select.options.length;
+//                                 for (i = 0; i < length; i++)     {
+//                                      select.options[i] = null;
+//                                }
+                        $('#subcategory').val('');
+                        $('#contact-council').val('');
+             $('#subcategory').empty();
+//                                     document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+              
+              //$("#subcategory")[0].selectedIndex = 0;
+              $("#contact-council")[0].selectedIndex = 0;
+
+              
+               var list = $('#type option:selected'); 
+               
+           
+                var sel = list.text();
+                         if(sel=="solo"){
+                            $('.result').addClass('show');
+                              $('.second').removeClass('show');
+                              $('#contact-form').attr('action','RegisterSolo');
+                             $('.team').removeClass('show');
+                             $('.nam').removeClass('hide');
+                         }
+                         else if(sel=="duet"){
+                              $('.result').addClass('show');
+                             $('.second').addClass('show');
+                            $('#contact-form').attr('action','RegisterDuet');
+                              $('.team').removeClass('show');
+                              $('.nam').removeClass('hide');
+                         }
+                         else if(sel=="team"){
+                              $('.result').addClass('show');
+                             $('.team').addClass('show');
+                            $('.second').removeClass('show');
+                              $('#contact-form').attr('action','RegisterTeam');
+                              $('.nam').addClass('hide');
+                         }
+                        else{
+                            alert('do appropriate selection');
+                        }
+                     });
+                $('.council').change(function(){
+                        
+               var council = $('.council option:selected'); 
+                var coun = council.text();
+                  //  alert(council.text());
+                         if(coun =="Literary Council"){
+                            
+                            
+                         }
+                         else if(coun=="Hobby Council"){
+
+                         }
+                         else if(coun=="Cultural Council"){
+                            
+                         }
+                            else{
+                                alert('do appropriate selection');
+                            }
+                     });
+            $('#contact-name').change(function(){
+                   var name = $('#contact-name').val();
+                   var length = name.length;
+                if(length>30){
+                    $('#contact-name').val('');
+                     alert('write only your name');
+                }
+            });
+            $('#contact-secondname').change(function(){
+                   var name = $('#contact-secondname').val();
+                   var length = name.length;
+                if(length>30){
+                   
+                    $('#contact-secondname').val('');
+                     alert('write only your name');
+                }
+            });
+            $('#contact-teamname').change(function(){
+                   var name = $('#contact-teamname').val();
+                   var length = name.length;
+                if(length>30){
+                   
+                    $('#contact-teamname').val('');
+                     alert('write only your team name');
+                }
+            });
+            $('#contact-roll').change(function(){
+                var rol = $('#contact-roll').val();
+                if(rol.length > 10){
+                    $('#contact-roll').val('');
+                    alert('enter correct rollno');
+                }
+            });
+            $('#contact-secondroll').change(function(){
+                var rol = $('#contact-secondroll').val();
+                if(rol.length > 10){
+                    $('#contact-secondroll').val('');
+                    alert('enter correct rollno');
+                }
+            });
+
+             $('#contact-number').change(function(){
+                var rol = $('#contact-number').val();
+                if(rol.length > 10){
+                    $('#contact-number').val('');
+                    alert('enter correct number');
+                }
+            });
+            $('#contact-secondnumber').change(function(){
+                var rol = $('##contact-secondnumber').val();
+                if(rol.length > 10){
+                    $('##contact-secondnumber').val('');
+                    alert('enter correct number');
+                }
+            });   
+            }); 
+
+        function dynamicdropdown(listindex)
+            {
+                 var list = $('#type option:selected'); 
+           
+                var sel = list.text();
+                document.getElementById("subcategory").length = 0;
+                switch (listindex)
+                {
+                    case "Literary" :
+                        if(sel=="solo"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("GK Quiz","GK Quiz");
+                        document.getElementById("subcategory").options[2]=new Option("Hindi Debate","Hindi debate");
+                        document.getElementById("subcategory").options[3]=new Option("English debate","English Debate");
+                        document.getElementById("subcategory").options[4]=new Option("Movie Making","Movie Making");
+                        document.getElementById("subcategory").options[5]=new Option("Spin-a-Yarn","Spin-a-Yarn");
+                        document.getElementById("subcategory").options[6]=new Option("Press Conference","Press Conference");
+                             document.getElementById("subcategory").options[7]=new Option("Mr. and Ms. Intellect","Mr. and Ms. Intellect");
+                             document.getElementById("subcategory").options[8]=new Option("Campus Recruitment","Campus Recruitment");
+                            document.getElementById("subcategory").options[9]=new Option("Paper Presentation","Paper Presentation");
+                            document.getElementById("subcategory").options[10]=new Option("Hindi Verse Writing","Hindi Verse writing");
+                            document.getElementById("subcategory").options[11]=new Option("Magazine Cover","Magazine Cover");
+                            document.getElementById("subcategory").options[12]=new Option("Cartoon Making","Cartoon Making");
+                        }
+                        if(sel=="duet"){
+                        document.getElementById("subcategory").options[0]=new Option("No Duet Event For Literary!!!","");
+
+                        }
+                         if(sel=="team"){
+                             document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                             document.getElementById("subcategory").options[1]=new Option("Ad-mad-Show","Ad-mad-Show");
+                         }
+                        break;
+                    
+                    case "Hobby" :
+                        if(sel=="solo"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                            document.getElementById("subcategory").options[8]=new Option("Coding","Coding");
+
+                        document.getElementById("subcategory").options[1]=new Option("Mehendi","Mehendi");
+                        document.getElementById("subcategory").options[2]=new Option("Green Card Making","Green Card Making");
+                        document.getElementById("subcategory").options[3]=new Option("NFS(Need For Speed)","NFS(Need For Speed)");
+                        document.getElementById("subcategory").options[5]=new Option("Master Throw","Master Throw");
+                        document.getElementById("subcategory").options[6]=new Option("Roadies","Roadies");
+                     document.getElementById("subcategory").options[7]=new Option("Diagknowz(Health Camp)","Diagknowz(Health Camp)"); 
+                       document.getElementById("subcategory").options[4]=new Option("Burst Balloon","Burst Balloon");
+                        }
+                          if(sel=="duet"){
+                                                      
+                        document.getElementById("subcategory").options[4]=new Option("Collage Making","Collage Making");
+
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Face Painting","Face Painting");
+                        document.getElementById("subcategory").options[2]=new Option("Tshirt Painting","Tshirt Painting");
+                        document.getElementById("subcategory").options[3]=new Option("Poster Making","Poster Making");
+
+                              
+                          }
+                        if(sel=="team"){
+                        document.getElementById("subcategory").options[5]=new Option("Bridge Making","Bridge Making");
+                         document.getElementById("subcategory").options[6]=new Option("Impulse Water Rocket","Impulse Water Rocket"); 
+
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("3D Rangoli","3D Rangoli");
+                        document.getElementById("subcategory").options[2]=new Option("Counter Strike 1.6","Counter Strike 1.6");
+                        document.getElementById("subcategory").options[3]=new Option("RoBo War","RoBo War");
+                     document.getElementById("subcategory").options[4]=new Option("Cosmotech","Cosmotech"); 
+                    document.getElementById("subcategory").options[7]=new Option("Compo-Charades","Compo-Charades");
+                            
+                    document.getElementById("subcategory").options[8]=new Option("Circuitronics","Circuitronics");
+
+                        }
+
+                            break;
+                            
+                            
+                    case "Cultural" :
+                        if(sel=="solo"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Ramp Walk","Ramp Walk");
+                        document.getElementById("subcategory").options[2]=new Option("Solo Singing","Solo Singing");
+                        document.getElementById("subcategory").options[3]=new Option("Solo Dance","Solo Dance");
+                        document.getElementById("subcategory").options[4]=new Option("Extra Talent","Extra Talent");
+                        }
+                          if(sel=="duet"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Duet Singing","Duet Singing");
+                        document.getElementById("subcategory").options[2]=new Option("Duet Dance","Duet Dance");
+                        document.getElementById("subcategory").options[3]=new Option("Extra Talent","Extra Talent");
+                          }
+                        if(sel=="team"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Group Dance","Group Dance");
+                        document.getElementById("subcategory").options[2]=new Option("Skit(street play)","Skit(street play)");
+                        document.getElementById("subcategory").options[5]=new Option("Skit(stage play)","Skit(stage play)");
+
+                        document.getElementById("subcategory").options[3]=new Option("Extra Talent","Extra Talent");
+                        document.getElementById("subcategory").options[4]=new Option("Street Play","Street Play"); 
+                        }
+                        
+                        break;
+                 
+                }
+                return true;
+            }
+        
+        
+    </script>
+</html>
